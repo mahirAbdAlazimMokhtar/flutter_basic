@@ -19,7 +19,7 @@ class MapFunction extends StatelessWidget {
           ...info.map((val) {
             return Row(
               children: [
-                Text('${val.name}',style:const  TextStyle(fontSize: 22),),
+                Text('${val.name}',style:const  TextStyle(fontSize: 22)),
                 Text('${val.data}',style:const  TextStyle(fontSize: 22),),
                 Text('${val.height}',style:const  TextStyle(fontSize: 22),),
               ],
