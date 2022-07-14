@@ -8,12 +8,13 @@ class CustomTextField extends StatefulWidget {
 }
 
 bool passwordShow = true;
+var char = 'U+1F600';
 
 class _CustomTextFieldState extends State<CustomTextField> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+
       body: Container(
         color: Colors.grey.shade100,
         child: Column(
@@ -24,6 +25,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
             Container(
               margin: const EdgeInsets.all(20),
               child: TextField(
+                obscuringCharacter: '0',
                 keyboardType: TextInputType.visiblePassword,
                 obscureText: passwordShow,
                 decoration: InputDecoration(
